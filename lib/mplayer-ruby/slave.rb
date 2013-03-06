@@ -12,7 +12,7 @@ module MPlayer
     # set :path to point to the location of mplayer
     # defaults to '/usr/bin/mplayer'
     def initialize(file = "",options ={})
-      raise ArgumentError,"Invalid File" unless File.exists?(file)
+      #raise ArgumentError,"Invalid File" unless File.exists?(file)
       options[:path] ||= '/usr/bin/mplayer'
       @file = file
 
